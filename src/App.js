@@ -6,13 +6,13 @@ const DUMMY_EXPENSES = [
     id: 1,
     title: "Car Insurance",
     amount: 239.46,
-    date: new Date(2021, 6, 4),
+    date: new Date(2019, 6, 4),
   },
   {
     id: 2,
     title: "Toilet paper",
     amount: 4,
-    date: new Date(2021, 3, 1),
+    date: new Date(2020, 3, 1),
   },
   {
     id: 3,
@@ -24,13 +24,13 @@ const DUMMY_EXPENSES = [
     id: 4,
     title: "Iphone",
     amount: 999,
-    date: new Date(2021, 9, 11),
+    date: new Date(2019, 9, 11),
   },
   {
     id: 5,
     title: "Loan",
     amount: 35661,
-    date: new Date(2021, 0, 1),
+    date: new Date(2020, 0, 1),
   },
 ];
 const App = () => {
