@@ -26,11 +26,12 @@ const ExpenseForm =(props)=>{
         setDateHandler(event.target.value)
     }
 
+
     const submitHandler=(event)=>{
         event.preventDefault(); //no reloading page while submitting
         const expense={
             title:enteredTitle,
-            amount:enteredAmount,
+            amount:+enteredAmount,
             date:new Date(enteredDate),
             id:Math.random().toString()
         }
@@ -57,6 +58,7 @@ const ExpenseForm =(props)=>{
                 </div>
             </div>
             <div className="new-expense__actions">
+                <button onClick={props.onCancel}>Cancel</button>
                 <button>Add Expense</button>
             </div>
         </form>
